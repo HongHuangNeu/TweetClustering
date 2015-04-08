@@ -24,7 +24,7 @@ object parser {
       var termList: Array[(String, Long)] = new Array[(String, Long)](0)
       val cleartext = str.replaceAll("https?://\\S+\\s?", "");
       val tmp = safeChar(cleartext)
-      val stem = tmp
+      val stem = Stemmer.stem(tmp.trim())
 
       termList = termList ++ Array((safeChar(stem), 1L))
       termList
