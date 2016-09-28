@@ -1,4 +1,4 @@
-Text Clustering program in Scala
+Text Clustering program in Scala, used for the "sentiment radar" project of Information Retrieval course. K-Means algorithm is used for clustering.
 
 idAssign.scala transform a text file(one line per file) into a new file with key-text pairs
 
